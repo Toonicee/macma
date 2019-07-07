@@ -1,0 +1,39 @@
+@import "_mixin";
+@import "variable";
+@import "page-header";
+@import "user";
+@import "nav";
+@import "slidebar";
+@import "cart";
+@import "page-main";
+@import "search";
+@import "slider";
+@import "delivery";
+@import "product";
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+body {
+  font-family: $type-font;
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: "Europe";
+  src: url("../font/Europe.ttf.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+.container {
+  padding: 0;
+}
+
+.visually-hidden {
+  display: none;
+}

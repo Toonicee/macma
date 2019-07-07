@@ -1,0 +1,37 @@
+.slider {
+  background: #eee;
+  margin-top: 30px;
+  position: relative;
+}
+
+.slider__wrapper {
+  display: flex;
+}
+
+.slider__link {
+  line-height: 18px;
+  color: #0E5FAD;
+  background: #FFC808;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 17px 60px 17px 45px;
+  margin-left: 5px;
+  transition: .5s;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.slider__title {
+  font-size: 64px;
+  line-height: 64px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 77px 0 46px 0;
+}
+
+.slider__control {
+  position: absolute;
+  bottom: 20px;
+  left: 46%;
+}

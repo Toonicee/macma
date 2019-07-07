@@ -1,0 +1,29 @@
+.user__list {
+  @include reset-list;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user__link {
+  @include link;
+  padding: 5px 2px 5px 10px;
+}
+
+.user__item {
+  &:nth-child(1) {
+    .user__link {
+      position: relative;
+      padding: 5px 13px 5px 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 25px;
+        background: #fff;
+        top: 1px;
+        right: 1px;
+      }
+    }
+  }
+}

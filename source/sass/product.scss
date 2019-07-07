@@ -1,0 +1,149 @@
+.product {
+  margin-top: 55px;
+}
+
+.product__list-sort {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.product__link-sort {
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  fill: rgba(0, 0, 0, 0.4);
+  transition: .2s;
+
+  &:hover {
+    color: #0E5FAD;
+    border-bottom: 1px solid #0E5FAD;
+    fill: #0E5FAD;
+  }
+
+  &:active {
+    color: #0E5FAD;
+    border-bottom: 1px solid #0E5FAD;
+    fill: #0E5FAD
+  }
+}
+
+.product__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #0E5FAD;
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid rgba(14, 95, 173, 0.3);
+}
+
+.product__in-cart {
+  position: absolute;
+  bottom: -60px;
+  fill: #0E5FAD;
+  z-index: 100;
+
+  .icon__heart {
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+  }
+}
+
+.product__price {
+  font-size: 22px;
+  margin: 12px 0 0 0;
+  line-height: 22px;
+  color: #0E5FAD;
+  display: flex;
+  align-items: baseline;
+
+  &--del {
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    margin-left: 32px;
+  }
+}
+
+.product__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__link {
+  font-size: 0;
+  color: #fff;
+}
+
+.product__img {
+  padding: 18px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.product__item {
+  margin: 0 20px 30px 0;
+  position: relative;
+  width: 237px;
+  padding-bottom: 11px;
+  transition: .5s;
+
+  &:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+
+    .product__in-cart {
+      position: absolute;
+      height: 61px;
+      width: 100%;
+      background: red;
+      background: #fff;
+      box-shadow:  0 4px 4px rgba(0, 0, 0, 0.25);
+
+        .icon__heart {
+          opacity: 1;
+        }
+      }
+
+    .product__link {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 21px 57px 13px 59px;
+      background: linear-gradient(40.07deg, #2296D7 12.76%, #0E5FAD 86.8%);
+      transition: .6s;
+      font-size: 14px;
+    }
+  }
+}
+
+.product__inner {
+  margin: 44px 0 0 0;
+  padding: 0 0 0 17px;
+}
+
+.product__dscr {
+  margin: 0;
+}
+
+.product__span {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  &--disc {
+    color: #FF0808;
+
+  }
+
+  &--new {
+    color: #008C27;
+
+  }
+}

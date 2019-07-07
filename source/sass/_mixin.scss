@@ -1,0 +1,18 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link {
+  color: #fff;
+  transition: .4s;
+
+  &:hover {
+    color: #FFC808;
+  }
+
+  &:active {
+    color: #FFC808;
+  }
+}

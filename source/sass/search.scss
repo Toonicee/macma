@@ -1,0 +1,38 @@
+.search {
+  border: 1px solid #0E5FAD;
+  box-sizing: border-box;
+}
+
+.search__input {
+  border: none;
+  width: 71%;
+  padding: 15px 15px 14px;
+
+}
+
+.search__select {
+  width: 20%;
+  margin-right: 4px;
+  position: relative;
+
+    &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    background: #0E5FAD;
+    top: -45px;
+    right: -8px;
+  }
+}
+
+.search__btn {
+  border: none;
+  background: #0E5FAD;
+  padding: 30px 29px 20px 28px;
+}
+
+.search__select {
+  border: none;
+  padding: 15px 0 16px 10px;
+}

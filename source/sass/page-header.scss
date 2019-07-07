@@ -1,0 +1,57 @@
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header__container {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-header__wrapper {
+
+  &--top {
+    background: $header-top-color;
+    height: 39px;
+    display: flex;
+    align-items: center;
+  }
+
+  &--btm {
+    background: $header-btm-color;
+    height: 112px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-header__inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-header__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__link {
+  @include link;
+}
+
+.page-header__select {
+  border: none;
+  background: inherit;
+  font-size: 14px;
+  color: #fff;
+}
+
+.page-header__tel {
+  @include link;
+  text-transform: uppercase;
+  font-family: $type-font;
+  font-size: 16px;
+  margin-right: 10px;
+  padding-left: 30px;
+}

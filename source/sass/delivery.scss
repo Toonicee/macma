@@ -1,0 +1,14 @@
+.delivery {
+  margin-top: 32px;
+}
+
+.delivery__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery__txt {
+  font-size: 16px;
+  line-height: 16px;
+}

@@ -1,0 +1,24 @@
+.cart__link {
+  display: flex;
+  flex-direction: column;
+  padding-left: 45px;
+  @include link;
+
+  span {
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.cart {
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.cart__item {
+
+  &:nth-child(1) {
+    margin-left: 75px;
+  }
+}

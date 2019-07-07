@@ -1,0 +1,21 @@
+
+.nav__list {
+  @include reset-list;
+  width: 100%;
+  display: flex;
+  align-items: center;
+/*  justify-content: space-between;*/
+}
+
+.nav__link {
+  @include link;
+  font-size: 16px;
+}
+
+.nav__item {
+  margin-right: 41px;
+
+  &:nth-child(1) {
+    margin-right: 90px;
+  }
+}
