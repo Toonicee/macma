@@ -1,0 +1,44 @@
+.form {
+  margin: 53px 0 60px 0;
+  display: flex;
+  background: linear-gradient(181.88deg, #0E5FAD -0.13%, #2296D7 107.62%);
+  padding-bottom: 10px;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  margin: 25px 0 6px 30px;
+
+  span {
+    color: #FFC808;
+  }
+}
+
+.form__wrapper {
+ width: 64%;
+}
+
+.form__txt {
+  font-size: 13px;
+  line-height: 13px;
+  color: #fff;
+  margin-left: 30px;
+}
+
+.form__input {
+  border: none;
+  padding: 17px 11px 15px 16px;
+  margin: 29px 11px 0 50px;
+  width: 48%;
+}
+
+.form__btn {
+  border: none;
+  margin: 0 !important;
+  padding: 19px 47px 19px 42px !important;
+}

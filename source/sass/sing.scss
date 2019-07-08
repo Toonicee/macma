@@ -1,0 +1,26 @@
+.sing {
+  background: #0E5FAD;
+  display: flex;
+  margin-top: 33px;
+  position: relative;
+  padding-bottom: 35px;
+}
+
+.sing__img {
+  position: absolute;
+  right: 0;
+}
+
+.sing__title {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 40px 278px 9px 58px;
+
+  span {
+    color: #FFC808;
+  }
+}

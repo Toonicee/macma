@@ -10,6 +10,12 @@
 @import "slider";
 @import "delivery";
 @import "product";
+@import "intro";
+@import "sing";
+@import "news";
+@import "partners";
+@import "form";
+@import "page-footer";
 
 a {
   &:hover {
@@ -34,6 +40,31 @@ body {
   padding: 0;
 }
 
+.control {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .visually-hidden {
   display: none;
+}
+
+.title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  color: #0E5FAD;
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid rgba(14, 95, 173, 0.3);
+}
+
+.link {
+  background: #FFC808;
+  display: inline-block;
+  margin: 20px 0 0 60px;
+  line-height: 14px;
+  color: #0E5FAD;
+  padding: 19px 62px;
 }

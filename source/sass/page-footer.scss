@@ -1,0 +1,62 @@
+.page-footer {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.page-footer__container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.page-footer__top {
+  background: #051F37;
+  padding-bottom: 66px;
+  position: relative;
+
+  &::before {
+    content: "";
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 500px;
+    background: url("../img/pattern.png");
+  }
+}
+
+.page-footer__btm {
+  background: #041729;
+
+  p {
+    margin: 11px 0;
+  }
+}
+
+.page-footer__list {
+
+  @include reset-list;
+}
+
+.page-footer__wrapper-img {
+  margin: 60px 0 29px 0;
+}
+
+.page-footer__link {
+  @include link;
+}
+
+.page-footer__sect {
+  margin: 64px 0 0 90px;
+}
+
+.page-footer__title {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.page-footer__item {
+  margin-bottom: 9px;
+}
