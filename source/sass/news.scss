@@ -6,6 +6,12 @@
   margin-bottom: 30px !important;
 }
 
+.news__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
 .news__wrapper {
   position: relative;
   font-size: 13px;

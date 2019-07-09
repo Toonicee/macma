@@ -123,3 +123,9 @@
 .intro__descr {
   padding-bottom: 17px;
 }
+
+@media (max-width: 950px) {
+  .intro {
+    flex-direction: column;
+  }
+}

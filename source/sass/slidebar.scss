@@ -1,3 +1,9 @@
+.sidebar {
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 30px;
+}
+
 .sidebar__catalog {
   border: 1px solid #ECECEC;
   position: relative;
@@ -104,7 +110,6 @@
 
 .sidebar__card {
   background: linear-gradient(to bottom,  #0E5FAD , #2296D7 );
-  margin: 29px 0 0 0;
 }
 
 .sidebar__title {
@@ -160,7 +165,6 @@
 }
 
 .sidebar__select {
-  margin: 30px 0 27px 0;
   display: flex;
   padding-bottom: 37px;
   flex-direction: column;
@@ -191,4 +195,11 @@
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

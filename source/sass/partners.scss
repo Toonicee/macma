@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.partners__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .partners__item {
   display: flex;
   margin-top: 25px;

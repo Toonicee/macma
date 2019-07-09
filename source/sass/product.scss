@@ -65,8 +65,9 @@
 
 .product__list {
   @include reset-list;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px 30px;
 }
 
 .product__link {
@@ -81,9 +82,7 @@
 }
 
 .product__item {
-  margin: 0 20px 30px 0;
   position: relative;
-  width: 237px;
   padding-bottom: 11px;
   transition: .5s;
 
@@ -140,5 +139,11 @@
   &--new {
     color: #008C27;
 
+  }
+}
+
+@media (max-width: 991px) {
+  .product__list {
+    justify-content: space-around;
   }
 }

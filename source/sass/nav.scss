@@ -19,3 +19,17 @@
     margin-right: 90px;
   }
 }
+
+@media (max-width: 991px) {
+  .nav {
+    margin-top: 25px;
+  }
+
+  .nav__item {
+    margin: 0;
+  }
+
+  .nav__list {
+    justify-content: space-between;
+  }
+}

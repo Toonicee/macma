@@ -1,5 +1,7 @@
 .delivery {
-  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .delivery__item {
