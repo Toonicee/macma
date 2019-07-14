@@ -1,4 +1,29 @@
 .page-main__container {
-    width: 1040px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 238px 74%;
+  grid-column-gap: 30px;
+  width: 1040px;
+  margin: 0 auto;
+/*  grid-tamplater-areas:
+     "slidebar slidebar"
+     "main"*/
+}
+
+.page-main__wrapper {
+/*   grid-colums: 1;*/
+}
+
+/*.page-main__content {
+   grid-area: main;
+}*/
+
+@media (max-width: $table-width) {
+  .page-main__row {
+/*    flex-direction: column;*/
+  }
+
+  .page-main__container {
+    width: $width-container-table;
+    grid-template-columns: 100%;
+  }
 }

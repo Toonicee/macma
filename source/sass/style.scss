@@ -3,7 +3,7 @@
 @import "page-header";
 @import "user";
 @import "nav";
-@import "slidebar";
+@import "sidebar";
 @import "cart";
 @import "page-main";
 @import "search";
@@ -16,6 +16,9 @@
 @import "partners";
 @import "form";
 @import "page-footer";
+@import "rating";
+@import "control";
+@import "normalize";
 
 a {
   &:hover {
@@ -55,7 +58,7 @@ body {
   font-size: 24px;
   line-height: 24px;
   color: #0E5FAD;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding-bottom: 11px;
   border-bottom: 1px solid rgba(14, 95, 173, 0.3);
 }
@@ -67,4 +70,11 @@ body {
   line-height: 14px;
   color: #0E5FAD;
   padding: 19px 62px;
+}
+
+@media (max-width: $mobile-width) {
+
+  img {
+    max-width: 100%;
+  }
 }

@@ -1,7 +1,8 @@
 .sing {
-  background: #0E5FAD;
+  background: url("../img/bg-sing.png");
+  background-size: cover;
   display: flex;
-  margin-top: 33px;
+  margin-top: 72px;
   position: relative;
   padding-bottom: 35px;
 }
@@ -22,5 +23,24 @@
 
   span {
     color: #FFC808;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .sing {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .sing__title {
+    margin: 25px 0 0 0;
+  }
+
+  .sing__img {
+    display: none;
+  }
+
+  .sing__link {
+    margin-left: 0 !important;
   }
 }

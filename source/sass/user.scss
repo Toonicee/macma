@@ -7,6 +7,17 @@
 .user__link {
   @include link;
   padding: 5px 2px 5px 10px;
+  fill: rgba(255, 255, 255, 0.8);
+
+  &:hover {
+    fill: #FFC808;
+  }
+}
+
+.icon-padlock {
+  position: absolute;
+  top: 4px;
+  left: -2px;
 }
 
 .user__item {
@@ -28,8 +39,26 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: $table-width) {
   .user {
-    margin: 15px 0;
+    grid-row: 2;
+    grid-column: 3;
+    grid-template-columns: 100%;
+  }
+
+  .user__item {
+    &:nth-child(1) {
+      .user__link {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .user__list {
+    flex-direction: column;
   }
 }

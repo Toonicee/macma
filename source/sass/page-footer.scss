@@ -7,6 +7,11 @@
 .page-footer__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  &--btm {
+    display: grid;
+    grid-template-columns: 42% 38% 26%;
+  }
 }
 
 .page-footer__container {
@@ -16,16 +21,15 @@
 
 .page-footer__top {
   background: #051F37;
-  padding-bottom: 66px;
+  padding-bottom: 59px;
   position: relative;
 
   &::before {
     content: "";
-    z-index: 100;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 1074px;
+    top: -45px;
+    right: -65px;
+    width: 1077px;
     height: 500px;
     background: url("../img/pattern.png");
   }
@@ -64,4 +68,44 @@
 
 .page-footer__item {
   margin-bottom: 9px;
+}
+
+.social__list {
+  display: flex;
+  margin-top: 34px;
+
+  li {
+  cursor: pointer;
+   margin-right: 20px;
+  }
+}
+
+@media (max-width: $table-width) {
+  .page-footer__desc {
+    grid-column: 1 /-1;
+  }
+
+  .page-footer__top {
+    &::before {
+      content: none;
+    }
+  }
+
+  .page-footer__container {
+    width: $width-container-table;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &--btm {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 }

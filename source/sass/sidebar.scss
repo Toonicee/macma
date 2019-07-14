@@ -11,6 +11,16 @@
 
 .sidebar__list {
   @include reset-list;
+  z-index: 100;
+
+  &--sub {
+    background: rgba(14, 95, 173, 0.05);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: .4s linear;
+  }
 }
 
 .sidebar__label {
@@ -38,19 +48,35 @@
 .sidebar__item {
   position: relative;
   fill: #0E5FAD;
+
+  &:hover {
+    .sidebar__list--sub {
+      visibility: visible;
+      max-height: 200px;
+      opacity: 1;
+    }
+
+    .sidebar__triangle {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .sidebar__battery {
   position: absolute;
   top: 14px;
   left: 13px;
+
+  &--sub {
+    left: 33px;
+  }
 }
 
 .sidebar__input {
   display: none;
 
   &:checked + label ~ .sidebar__wrapper {
-    max-height: 500px;
+    max-height: 700px;
     border-radius:0 0 10px 10px;
     z-index: 10;
     opacity: 1;
@@ -68,6 +94,10 @@
   padding: 14px 0 14px 43px;
   display: block;
   border-bottom: 1px solid #ECECEC;
+
+  &--sub {
+    padding-left: 60px;
+  }
 }
 
 .sidebar__togle {
@@ -159,9 +189,16 @@
 }
 
 .sidebar__triangle {
+  transition: all ease-in-out .4s;
   position: absolute;
   top: 21px;
   right: 14px;
+
+  &--sub {
+    position: absolute;
+    top: 21px;
+    right: 14px;
+  }
 }
 
 .sidebar__select {
@@ -189,6 +226,7 @@
   position: absolute;
   font-size: 18px;
   line-height: 29px;
+  margin-left: 18px;
   left: 1px;
   bottom: 34px;
   text-align: center;
@@ -197,9 +235,15 @@
   font-weight: 700;
 }
 
-@media (max-width: 991px) {
+@media (max-width: $table-width) {
   .sidebar {
-    display: flex;
-    flex-direction: column-reverse;
+    grid-template-columns: repeat(auto-fill, 238px);
+    grid-gap: 30px;
+    grid-auto-rows: auto;
+    justify-content: center;
+  }
+
+  .sidebar__catalog {
+    grid-column: 1 / -1;
   }
 }
