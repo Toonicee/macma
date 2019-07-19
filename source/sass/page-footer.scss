@@ -28,8 +28,8 @@
     content: "";
     position: absolute;
     top: -45px;
-    right: -65px;
-    width: 1077px;
+    right: 7px;
+    width: 1000px;
     height: 500px;
     background: url("../img/pattern.png");
   }
@@ -58,6 +58,7 @@
 
 .page-footer__sect {
   margin: 64px 0 0 90px;
+  z-index: 100;
 }
 
 .page-footer__title {
