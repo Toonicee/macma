@@ -2,6 +2,11 @@
   margin: 59px 0 67px 0;
 }
 
+.news__item {
+  transition: 1s;
+  box-shadow: none !important;
+}
+
 .news__title {
   margin-bottom: 30px !important;
 }
@@ -31,7 +36,10 @@
   }
 
   .news__item {
+    transform: scale(0);
+    position: absolute;
     display: flex;
+    opacity: 0;
     flex-direction: column;
     align-items: center;
   }

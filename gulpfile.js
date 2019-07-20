@@ -102,7 +102,7 @@ gulp.task("copy", function () {
       "source/fonts/**/*.{woff,woff2}",
       "source/img/**",
       "source/*.ico",
-      "source/js/script.js",
+      "source/js/jquery-3.2.1.min.js",
       "source/*.html",
     ], {
       base: "source"
@@ -115,6 +115,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "html",
+  "jsmin",
   "images",
   "webp"));
 

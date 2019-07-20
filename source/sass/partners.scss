@@ -33,14 +33,11 @@
   }
 
   .partners__item {
+    transform: scale(0);
+    transition: 1s;
     position: absolute;
     opacity: 0;
     left: 25%;
     justify-content: center;
-  }
-
-  .active {
-    opacity: 1;
-    position: static;
   }
 }

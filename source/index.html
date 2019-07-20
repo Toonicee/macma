@@ -357,35 +357,46 @@
             <span class="visually-hidden">Поиск</span>
           </button>
         </div>
-        <section class="slider">
-          <div class="slider__wrapper showed">
-            <div class="slider__inner">
-              <img class="slider__img" src="img/car-wheel.png" width="458" height="370">
+        <section class="slider" id="slider-wrap">
+          <div id="active-slide">
+            <div id="slider">
+              <div class="slider__wrapper slide">
+                <div class="slider__inner">
+                  <img class="slider__img" src="img/car-wheel.png" width="458" height="370">
+                </div>
+                <div class="slider__inner">
+                  <h1 class="slider__title">Весенние скидки</h1>
+                  <a class="slider__link" href="">Подробнее</a>
+                </div>
+              </div>
+                            <div class="slider__wrapper slide">
+                <div class="slider__inner">
+                  <img class="slider__img" src="img/car-wheel.png" width="458" height="370">
+                </div>
+                <div class="slider__inner">
+                  <h1 class="slider__title">Летние скидки</h1>
+                  <a class="slider__link" href="">Подробнее</a>
+                </div>
+              </div>
+              <div class="slider__wrapper slide">
+                <div class="slider__inner">
+                  <img class="slider__img" src="img/car-wheel.png" width="458" height="370">
+                </div>
+                <div class="slider__inner">
+                  <h1 class="slider__title">Зимнии скидки</h1>
+                  <a class="slider__link" href="">Подробнее</a>
+                </div>
+              </div>
+              <div class="slider__wrapper slide">
+                <div class="slider__inner">
+                  <img class="slider__img" src="img/car-wheel.png" width="458" height="370">
+                </div>
+                <div class="slider__inner">
+                  <h1 class="slider__title">Осенние скидки</h1>
+                  <a class="slider__link" href="">Подробнее</a>
+                </div>
+              </div>
             </div>
-            <div class="slider__inner">
-              <h1 class="slider__title">Весенние скидки</h1>
-              <a class="slider__link" href="">Подробнее</a>
-            </div>
-          </div>
-          <div class="slider__control">
-            <ul class="slider__list">
-              <li>
-                <input class="slider__input" id="radio1" type="radio" name="sld1">
-                <label class="slider__label" for="radio1"></label>
-              </li>
-              <li>
-                <input class="slider__input" id="radio2" type="radio" name="sld1">
-                <label class="slider__label" for="radio2"></label>
-              </li>
-              <li>
-                <input class="slider__input" id="radio3" type="radio" name="sld1">
-                <label class="slider__label" for="radio3"></label>
-              </li>
-              <li>
-                <input class="slider__input" id="radio4" type="radio" name="sld1">
-                <label class="slider__label" for="radio4"></label>
-              </li>
-            </ul>
           </div>
         </section>
         <div class="delivery">
@@ -1403,7 +1414,7 @@
       </div>
     </div>
   </footer>
-
-  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

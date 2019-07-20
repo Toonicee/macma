@@ -72,9 +72,16 @@ body {
   padding: 19px 62px;
 }
 
+.active {
+  opacity: 1;
+  position: static;
+  transform: scale(1);
+}
+
 @media (max-width: $mobile-width) {
 
   img {
     max-width: 100%;
   }
 }
+

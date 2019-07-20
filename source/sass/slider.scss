@@ -8,9 +8,7 @@
 .slider__wrapper {
   display: grid;
   grid-template-columns: 60% 40%;
-  position: absolute;
   left: 0;
-  opacity: 0;
   transition: opacity 1s;
 }
 
@@ -42,45 +40,63 @@
   margin: 77px 0 46px 0;
 }
 
-.slider__control {
-  position: absolute;
-  bottom: 20px;
-  left: 46%;
-}
-
-.slider__label {
-  width: 20px;
-  cursor: pointer;
-}
-
-.slider__input {
-  position: relative;
-  display: none;
-
-  + label::after {
-    content: "";
-    cursor: pointer;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 2px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-  }
-
-  &:checked +label::after  {
-    background: rgba(255, 255, 255, 1);
-  }
-}
 
 .slider__list {
   @include reset-list;
   display: flex;
 }
 
-.showed{
-    opacity: 1;
-    position: static;
+#active-slide {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+
+#slider{
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+}
+
+.slide{
+    width: calc(100%/4);
+    list-style: none;
+    float: left;
+}
+
+.Radio-But {
+    padding-bottom: 10px;
+    text-align:center;
+
+  .ctrl-select {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .5s;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    width: 10px;
+    height: 10px;
+    top: 2px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+
+    &:hover {
+      background: rgba(255, 255, 255, 1);
+    }
+
+    &.active {
+      background: rgba(255, 255, 255, 1);
+    }
+  }
 }
 
 @media (max-width: $table-width) {
