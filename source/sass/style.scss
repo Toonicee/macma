@@ -18,7 +18,15 @@
 @import "page-footer";
 @import "rating";
 @import "control";
+@import "crumbs";
 @import "normalize";
+@import "filter";
+@import "pagination";
+@import "specifications";
+@import "card";
+@import "review";
+@import "wholesaler";
+@import "contact";
 
 a {
   &:hover {
@@ -41,6 +49,8 @@ body {
 
 .container {
   padding: 0;
+  width: 1040px;
+  margin: 0 auto;
 }
 
 .control {
@@ -82,6 +92,10 @@ body {
 
   img {
     max-width: 100%;
+  }
+
+  .container {
+    width: 100%;
   }
 }
 

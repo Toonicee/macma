@@ -9,6 +9,12 @@
   position: relative;
 }
 
+.sidebat__news-title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #0E5FAD;
+}
+
 .sidebar__list {
   @include reset-list;
   z-index: 100;

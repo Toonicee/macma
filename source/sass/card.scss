@@ -1,0 +1,167 @@
+.card {
+  display: grid;
+  grid-template-columns: 54% 46%;
+  border: none;
+  margin: 29px 0 30px 0;
+
+  span {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+
+.card__price {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #0E5FAD;
+}
+
+.card__table {
+  line-height: 17px;
+  margin-bottom: 26px;
+  width: 100%;
+
+  td {
+    &:nth-child(1) {
+      width: 60%;
+    }
+
+    &:nth-child(2) {
+      width: 40%;
+    }
+  }
+}
+
+.cart__inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-right: 31px;
+}
+
+.card__title {
+  font-size: 22px;
+  line-height: 31px;
+  color: #0E5FAD;
+}
+
+.card__wrapper {
+  background: rgba(14, 95, 173, 0.05);
+  padding: 23px 30px 28px 29px;
+}
+
+.card__wrapper-img {
+  padding: 60px 0 0 50px;
+  position: relative;
+}
+
+.card__desc {
+  position: absolute;
+  bottom: 23px;
+  left: 0;
+  font-size: 14px !important;
+}
+
+.card__wrapper-svg {
+  width: 54px;
+  height: 54px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__in-cart {
+  fill: #0E5FAD;
+  transition: .6s;
+  display: flex;
+  justify-content: space-between;
+
+  &:hover {
+    fill: #ffc808;
+  }
+}
+
+.card__link {
+  display: inline-block;
+  padding: 17px 0;
+  width: 76%;
+  text-align: center;
+
+  background: linear-gradient(40.07deg, #2296D7 12.76%, #0E5FAD 86.8%);
+  font-size: 14px;
+  @include link;
+}
+
+/* стилизация stepper */
+
+.stepper {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 22px;
+}
+
+.stepper__wrapper {
+  position: relative;
+  margin: 0 30px 0 15px;
+}
+
+.stepper__input {
+  width: 70px;
+  height: 34px;
+  border: none;
+  text-align: center;
+}
+
+.stepper__btm {
+  position: absolute;
+  top: 10px;
+  border: none;
+  background: inherit;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    transform: scale(1.6)  rotate(180deg);
+    background: url("../img/triangle.svg") no-repeat;
+    background-position: center;
+    width: 10px;
+    top: -2px;
+    left: 10px;
+    height: 20px;
+  }
+
+  &--up {
+    right: 29px;
+
+    &::before {
+      transform: scale(1.6)  rotate(0deg);
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .card {
+    grid-template-columns: 100%;
+  }
+
+  .card__wrapper-img {
+    padding: 0 0 90px 0;
+  }
+
+  .card__table {
+    td {
+      &:nth-child(1) {
+        width: 75%;
+      }
+
+      &:nth-child(2) {
+        width: 25%;
+      }
+    }
+  }
+}

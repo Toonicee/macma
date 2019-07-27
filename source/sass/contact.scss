@@ -1,0 +1,145 @@
+.contact {
+  margin: 37px 0 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-right: 45px;
+  color: #0E5FAD;
+  text-align: center;
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 33px;
+  width: 100%;
+
+  &--grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+}
+
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  margin-right: 20px;
+
+  &:nth-child(1) {
+    margin-right: 23px;
+  }
+
+  &--width {
+    width: 29%;
+  }
+}
+
+.contact__wrap {
+  display: flex;
+}
+
+.contact__input {
+  background: #F3F7FB;
+  border-radius: 4px;
+  width: 98%;
+  height: 42px;
+  margin-top: 9px;
+  padding-left: 20px;
+  border: none;
+
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
+.contact__select {
+  background: #F3F7FB;
+  border-radius: 4px;
+  width: 98%;
+  height: 42px;
+  margin-top: 9px;
+  padding-left: 20px;
+  border: none;
+}
+
+.contact__label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 15px;
+  color: #999;
+  letter-spacing: 1px;
+  margin-bottom: 31px;
+}
+
+.contact__btm {
+  background: linear-gradient(38.87deg, #2296D7 12.76%, #0E5FAD 86.8%);
+  border: none;
+  margin: 29px 35px 0 0;
+  width: 191px;
+  @include link;
+  padding: 20px 0;
+
+  &--next {
+    width: 237px;
+    background: #fff;
+    border: 1px solid #0E5FAD;
+    color: #0E5FAD;
+    margin-right: 20px;
+  }
+
+  &--pay {
+    width: 237px;
+  }
+}
+
+.contact-data {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  grid-column-gap: 30px;
+  margin: 42px 85px 80px 85px;
+}
+
+.contact-data__wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 30px;
+}
+
+.contact-data__inner {
+  grid-column: 1 / -1;
+}
+
+.contact-data__btm {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+@media (max-width: $mobile-width) {
+  .contact__inner {
+    width: 98%;
+  }
+
+  .contact-data {
+    grid-template-columns: 100%;
+    margin: 42px 10px 80px 10px;
+  }
+
+  .contact-data__wrapper {
+    grid-template-columns: 100%;
+  }
+
+  .contact__btm--next {
+    margin-right: 0;
+  }
+
+  .contact__btm--pay {
+    margin-right: 0;
+  }
+}

@@ -54,6 +54,12 @@
   padding: 15px 0 16px 10px;
 }
 
+@media (max-width: $table-width) {
+  .search {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .search {
     grid-template-columns: 38% 62% 1fr;

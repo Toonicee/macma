@@ -1,0 +1,35 @@
+.specifications__table {
+  width: 100%;
+  margin-top: 18px;
+  line-height: 39px;
+  tr {
+    &:nth-child(2n) {
+      background: rgba(14, 95, 173, 0.05);
+    }
+  }
+
+  td {
+    &:nth-child(1) {
+      width: 46%;
+      padding: 0 0 0 14px;
+    }
+
+    &:nth-child(2) {
+      width: 54%
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .specifications__table {
+    td {
+      &:nth-child(1) {
+        width: 70%;
+      }
+
+      &:nth-child(2) {
+        width: 30%
+      }
+    }
+  }
+}

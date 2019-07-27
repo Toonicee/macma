@@ -1,0 +1,40 @@
+.wholesaler {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.wholesaler__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #FDFEFF;
+  width: 100%;
+  background: #0E5FAD url("../img/bg-title.png");
+  text-align: center;
+  background-size: cover;
+  margin: 0;
+  padding: 29px 0 27px 0;
+}
+
+.wholesaler__wrapper {
+  padding: 44px 47px 0 59px;
+}
+
+.wholesaler__txt {
+  margin-bottom: 23px;
+}
+
+.wholesaler__contact {
+  margin: 94px 0 0 58px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.wholesaler__mode {
+  margin: 25px 0 0 59px;
+
+  p {
+    margin: 0;
+  }
+}
